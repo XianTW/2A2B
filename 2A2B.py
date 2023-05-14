@@ -25,16 +25,15 @@ while Complete:
         else:
             Complete = False
             password_str = [str(a) for a in password]
-
 print("Please enter four number(first number can't be 0,other numbers range from 0 to 9)")
 print(password_str)
 while Guess:
     ans= input("Your answer: ")
     answer = list(ans)
     if ans.isdigit() != 1:
-        print(Error)    
+        print('\33[31m'+Error+'\33[5m')    
     elif(answer[0] == '0') or (answer.__len__()!=4):
-        print(Error)
+        print('\33[31m'+Error+'\33[5m')
     else:
         for a in range(4):
             if answer[a] == password_str[a]:

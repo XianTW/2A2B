@@ -31,9 +31,9 @@ while Guess:
     ans= input("Your answer: ")
     answer = list(ans)
     if ans.isdigit() != 1:
-        print('\33[31m'+Error+'\33[5m')    
+        print('\033[31m'+Error+'\033[0m')    
     elif(answer[0] == '0') or (answer.__len__()!=4):
-        print('\33[31m'+Error+'\33[5m')
+        print('\033[31m'+Error+'\033[0m')
     else:
         for a in range(4):
             if answer[a] == password_str[a]:

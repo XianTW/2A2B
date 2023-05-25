@@ -26,7 +26,6 @@ while Complete:
             Complete = False
             password_str = [str(a) for a in password]
 print("Please enter four number(first number can't be 0,other numbers range from 0 to 9)")
-print(password_str)
 while Guess:
     ans= input("Your answer: ")
     answer = list(ans)

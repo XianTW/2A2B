@@ -19,7 +19,7 @@ def check(input_ls: str) -> bool:
     if len(input_ls) != 4 or len(set(input_ls)) != 4:
         return True
 
-    elif input_ls[0] == 0:
+    elif list(map(int,input_ls))[0] == 0:
         return True
 
     elif input_ls.isdigit() == 0:
